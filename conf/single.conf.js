@@ -2,6 +2,9 @@ exports.config = {
   'specs': [ '../specs/single.js' ],
   'browserstackUser': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
   'browserstackKey': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+  'plugins': [{
+  'package': "protractor-browserstack-reporter"
+}],
 
   'capabilities': {
     'build': 'protractor-browserstack',
